@@ -5,7 +5,7 @@ init();
 
 const inquirer = require('inquirer');
 const fs = require('fs');
-const circle = require(`./lib/shapes.js`);
+const render = require(`./lib/shapes.js`);
 
 const questions = [   
     {
@@ -36,7 +36,7 @@ const questions = [
 function runApp() {
     return inquirer.prompt(questions)
         .then((data) => {
-        const logo = circle(data)
+        const logo = render(data)
         fs.writeFile(`./examples/${data.characters}.svg`, logo, function(err){
             if (err) {
                 console.log(err)
