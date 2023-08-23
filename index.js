@@ -1,21 +1,28 @@
+function init() {}
+
+// Function call to initialize app
+init();
+
 const inquirer = require('inquirer');
 const fs = require('fs');
+const circle = require(`./lib/shapes.js`);
 
-const questions = [
+const questions = [   
     {
         type: 'input',
         name: 'characters',
         message: 'please type in 3 characters you want on your logo',
-    ,}
+    },
     {
         type:'input',
-        name: 'textColor'
+        name: 'textColor',
         message: 'please type in the color or hex code you want for the text color',
     },
     {
-        type: 'choice',
+        type: 'list',
         name: 'shape',
-        message: 'circle, triangle, square',
+        message: 'choose your shape',
+        choices: ['circle', 'triangle', 'square'],
     },
     {
         type: 'input',
@@ -24,4 +31,19 @@ const questions = [
     },
 
 
-]
+];
+
+function runApp() {
+    return inquirer.prompt(questions)
+        .then((data) => {
+        const logo = circle(data)
+        fs.writeFile(`./examples/${data.characters}.svg`, logo, function(err){
+            if (err) {
+                console.log(err)
+            } else {console.log('success!go look at your logo!')
+        }
+        })}
+        
+    )}
+
+runApp()  
