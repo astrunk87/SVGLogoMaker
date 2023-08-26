@@ -41,7 +41,7 @@ function runApp() {
         fs.writeFile(`./examples/${data.characters}.svg`, logo, function(err){
             if (err) {
                 console.log(err)
-            } else {console.log('success!go look at your logo!')
+            } else {console.log('success! go look at your logo!')
         }
         })}
         
