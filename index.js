@@ -38,7 +38,7 @@ function runApp() {
         .then((data) => {
         const logo = render(data)
         console.log(data);
-        fs.writeFile(`./examples/${data.characters}.svg`, logo, function(err){
+        fs.writeFile(`./examples/logo${data.characters}.svg`, logo, function(err){
             if (err) {
                 console.log(err)
             } else {console.log('success! go look at your logo!')
