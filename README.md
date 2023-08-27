@@ -23,6 +23,8 @@
 ## usage
   after you have installed the needed files and installed the packages, you will need to open a terminal in the index.js file and run node index.js and answer the promts, when you have done that you will see a file created in the examples file with your logo.
   video below shows program in actions
+  [Untitled_ Aug 27, 2023 4_41 PM.webm](https://github.com/astrunk87/SVGLogoMaker/assets/134554632/68110db5-7089-490f-8bb6-37bb39dbe686)
+
   
 
 ## License
