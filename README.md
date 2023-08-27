@@ -14,14 +14,14 @@
 
 ## description
  I made this project to make creating a simple SVG logo easier
- This project makes creating a simple SVG logo easy
- In doing this project I learned more about working with SVG and how to create a simple logo, testing and how it can help make creating code better. I also became more profecent with node, inquere and jest
+ This project makes creating a simple SVG logo easy by just answer a couple quick questions
+ In doing this project I learned more about working with SVG and how to create a simple logo, testing and how it can help make creating code better. I also became more profecent with node, inquirer and jest
 
 ## Installation
   To install this program you will need to copy in the files and install the packages
 
 ## usage
-  after you have installed the need files and installed the packages you will need to open a terminal in the index.js file and run node index.js and answer the promts, when you have done that you will see a file created in the examples file with your logo.
+  after you have installed the needed files and installed the packages, you will need to open a terminal in the index.js file and run node index.js and answer the promts, when you have done that you will see a file created in the examples file with your logo.
 
 ## License
   Licensed under the [MIT](https://choosealicense.com/licenses/mit/) license 
