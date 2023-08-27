@@ -22,6 +22,8 @@
 
 ## usage
   after you have installed the needed files and installed the packages, you will need to open a terminal in the index.js file and run node index.js and answer the promts, when you have done that you will see a file created in the examples file with your logo.
+  video below shows program in actions
+  
 
 ## License
   Licensed under the [MIT](https://choosealicense.com/licenses/mit/) license 
